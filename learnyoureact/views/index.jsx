@@ -35,15 +35,17 @@ class Todo extends React.Component {
 		this.state = {checked: false};
 	}
 
-	handleChange(e){
-		this.setState({ checked: e.target.checked });
+	handleChange(e) {
+        this.setState({
+            checked: e.target.checked
+        });
 	}
 
     render() {
         return (
             <tr>
             	<td style={style.tableContent} >
-            		<input type="checkbox" checked={this.state.checked} onChange={this.handleChange} />
+            		<input type="checkbox" checked={this.state.checked} onChange={this.handleChange.bind(this)} />
             	</td>
                 <td style={style.tableContent} >{this.props.title}</td>
                 <td style={style.tableContent} >{this.props.children}</td>
