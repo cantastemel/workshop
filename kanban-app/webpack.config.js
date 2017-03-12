@@ -59,7 +59,7 @@ switch(TARGET) {
           // E.g., '/kanban-demo/'. Webpack will alter asset paths
           // based on this. You can even use an absolute path here
           // or even point to a CDN.
-          //publicPath: ''
+          publicPath: '/kanban-app/',
           path: PATHS.build,
           filename: '[name].[chunkhash].js',
           chunkFilename: '[chunkhash].js'
