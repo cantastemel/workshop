@@ -1,2 +1,6 @@
-node_modules
+build/
+coverage/
+.eslintcache
+npm-debug.log
+node_modules/
 *.log
