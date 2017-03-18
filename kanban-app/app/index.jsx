@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './components/App';
 
-if(process.env.NODE_ENV !== 'production') {
-  React.Perf = require('react-addons-perf');
+if (process.env.NODE_ENV !== 'production') {
+	React.Perf = require('react-addons-perf');
 }
 
-ReactDOM.render(
-  <div>hello world</div>,
-  document.getElementById('app')
+ReactDOM.render( 
+	<App />, 
+	document.getElementById('app') 
 );
